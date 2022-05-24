@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
         <br/>
-        <Header as='h1'>Home Page</Header>
+        <Header as='h1'>Mehdi Home Page</Header>
         <Test></Test>
         <List>
           <List.Item as={NavLink} to='/jobPostings'>Job Postings</List.Item>

@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Input, Menu, Container, Header, Reveal } from 'semantic-ui-react'
-import SignedIn from './SignedIn'
-import SignedOut from './SignedOut'
+import SignedIn from '../SignedIn'
+import SignedOut from '../SignedOut'
 
 export default function Navi() {
-    const [isAuthenticated, setIsAuthenticated] = useState(true)
+    const [isAuthenticated, setIsAuthenticated] = useState(false)
 
-    function handleSignOut(params) {
+    function handleSignOut(isAuthenticated) {
         setIsAuthenticated(false)
     }
 
-    function handleLogIn(params) {
+    function handleLogIn(isAuthenticated) {
         setIsAuthenticated(true)
     }
 
